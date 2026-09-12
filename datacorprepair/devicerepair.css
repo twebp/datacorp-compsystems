@@ -1,0 +1,755 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --ink: #4A2D0D;
+    --paper: #fbfaf7;
+    --teal: #087c7c;
+    --section6: #716e69;
+    --section1: #fff8dc;
+    --section4: #c4e9e9;
+    --section7: #003d3b;
+    --footer: #fcebb6;
+    
+}
+.wrapper {
+    width: min(90%, 1400px);
+    margin-inline: auto;
+}
+html {
+font-size: 16px;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: var(--ink);
+    background-color: var(--paper);
+    text-align: center;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+a  {
+    color :inherit;
+    text-decoration: none;
+}
+button, input {
+    font-family: inherit;
+}
+.site-title span {
+    font-style: italic;
+    color: var(--teal);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--teal);
+}
+h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+.eyebrow {
+    position: relative; 
+    border: solid 0.5px var(--ink);
+    width:15%;
+    margin: 1.5rem auto;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.nav-list {
+    display: none;
+}
+
+.footer-container {
+  background-color: var(--footer);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+.footer-container ul li {
+  list-style: none;
+}
+.service-title {
+    margin-bottom: 5rem;
+}
+.service-unavailable, .product-unavailable {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+.service-unavailable a, .product-unavailable a {
+    cursor: not-allowed;
+}
+.service-unavailable span, .product-unavailable span{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+.map-link {
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        width: 92%;
+        margin: 0 auto;
+        padding: 0.75rem 0;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .logo {
+        grid-column: 1;
+        align-self: center;
+    }
+    .data-logo {
+        width: 55px;
+    }
+    .site-title {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-title strong{
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+    .site-title span {
+        font-size: 0.8rem;
+    }
+    .menu-toggle {
+        grid-column: 3;
+        display: block;
+        border: none;
+        background: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-list.active {
+        display: block;
+    }
+    .search-bar {
+        display: none;
+    }
+     /*DROP-DOWN NAV*/
+   .nav-list {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: var(--paper);
+    border-top: 1px solid rgba(74, 45, 13, 0.15);
+    z-index: 100;
+   }
+   .main-content_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+   }
+   .nav-list.is-open {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+   }
+   .nav-list_item {
+    width: 100%;
+   }
+   .nav-list a {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    text-align:center;
+    font-size: 1rem;
+   }
+.repair-device_selection {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.repair-device_item-card {
+    width: 100%;
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.repair-device_item-card a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.75rem 1rem;
+}
+.repair-device_image{
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.repair-device_name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: var(--ink);
+}
+/*ADDRESS AND MAP SECTION*/
+.location-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.address-map_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.address-map_container iframe {
+    width: 100%;
+    height: 300px;
+}
+.gallery {
+    width: 100%;
+    margin-top: 1rem;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.carousel-images {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/*HIDE*/
+.carousel-slide {
+    display: none;
+    margin: 0;
+}
+
+/*SHOW*/
+.carousel-slide.active {
+    display: block;
+}
+
+/*ABOUT SECTION*/
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.about-container p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.about-list_item {
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+/*previous and next buttons*/
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 44px;
+    background-color: rgba(251, 250, 247, 0.85);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+/*previous button*/
+.carousel-button.prev {
+    left: 8px;
+}
+/*next button*/
+.carousel-button.next {
+    right: 8px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+     .header {
+        width: 92%;
+        margin: 0 auto;
+        padding: 1rem 0;
+
+        display: grid;
+        grid-template-columns: 70px 2fr 70px;
+        align-items: center;
+    }
+    .logo {
+        grid-column: 1;
+        justify-self: start;
+    }
+    .data-logo {
+        width: 65px;
+    }
+    .site-title {
+        grid-column: 2;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .site-title strong {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+    .site-title span {
+        font-size: 0.85rem;
+    }
+    /*NAVIGATION*/
+    .nav-list {
+        display: none;
+    }
+    .nav-list.active {
+        display: block;
+    }
+    .search-bar {
+        display: none;
+    }
+ 
+     /*DROP-DOWN NAV*/
+   .nav-list {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: var(--paper);
+    border-top: 1px solid rgba(74, 45, 13, 0.15);
+    z-index: 100;
+   }
+   .nav-list.is-open {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+   }
+   .nav-list_item {
+    width: 100%;
+   }
+   .nav-list a {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    text-align:center;
+    font-size: 1rem;
+   }
+    .menu-toggle {
+    display: block;
+    grid-column: 3;
+    justify-self: end;
+    background: none;
+    border: none;
+ }
+
+ /*service section*/
+ .repair-device_selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+ }
+ .repair-device_item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    width: 100%;
+  
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    overflow: hidden;
+
+    cursor: pointer;
+ }
+ .repair-device_image{
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+ .repair-device_name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: var(--ink);
+}
+ .repair-device_item-card a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/*ADDRESS AND MAP SECTION*/
+.location-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.address-map_container {
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.address-map_container iframe {
+    width: 100%;
+    height: 300px;
+}
+.gallery {
+    width: 100%;
+    margin-top: 1rem;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.carousel-images {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/*HIDE*/
+.carousel-slide {
+    display: none;
+    margin: 0;
+}
+
+/*SHOW*/
+.carousel-slide.active {
+    display: block;
+}
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/*ABOUT SECTION*/
+.about-container p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.about-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.about-list_item {
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+/*previous and next buttons*/
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 44px;
+    background-color: rgba(251, 250, 247, 0.85);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+/*previous button*/
+.carousel-button.prev {
+    top:9rem;
+    left: 8px;
+}
+/*next button*/
+.carousel-button.next {
+    top:9rem;
+    right: 8px;
+}
+}
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+        display:flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    /*LOGO*/
+    .logo {
+        flex-shrink: 0;
+       
+    }
+    .data-logo {
+        width: 55px;
+        height:auto;
+    }
+    /*SITE TITLE*/
+    .site-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: nowrap;
+    }
+    .site-title strong {
+        font-size: 1.1rem;
+        line-height: 1.1;
+    }
+    .site-title span {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    /*NAVIGATION*/
+    .nav-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .nav-list a {
+        padding: 6px 12px;
+    }
+    /*SEARCH*/
+    .search-bar {
+        display:flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        margin-left: auto;
+    }
+    .search-bar input {
+        width: 220px;
+        padding: 0.5rem 0.75rem;
+
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+
+    .search-bar button {
+        width: 40px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: white;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .search-bar svg {
+        width: 18px;
+        height: 18px;
+        fill:none;
+        stroke: currentColor;
+        stroke-width: 2;
+    }
+     .eyebrow.map {
+    display: none;
+}
+    /*MAIN CONTENT*/
+    .main-content_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    
+    }
+     /*service section*/
+.repair-device_container {
+    grid-column: 2;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ .repair-device_selection {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ .repair-device_item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    width: 100%;
+  
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    overflow: hidden;
+
+    cursor: pointer;
+ }
+ .repair-device_image{
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+ .repair-device_name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: var(--ink);
+}
+ .repair-device_item-card a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/*ADDRESS AND MAP SECTION*/
+.address-map_container {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    
+}
+.location-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.address-map_container iframe {
+    width: 100%;
+    height: 300px;
+}
+.gallery {
+    width: 100%;
+    margin-top: 1rem;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.carousel-images {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/*HIDE*/
+.carousel-slide {
+    display: none;
+    margin: 0;
+}
+
+/*SHOW*/
+.carousel-slide.active {
+    display: block;
+}
+.about-container {
+    grid-column: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/*ABOUT SECTION*/
+.about-container p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.about-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.about-list_item {
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+/*previous and next buttons*/
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 44px;
+    background-color: rgba(251, 250, 247, 0.85);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+/*previous button*/
+.carousel-button.prev {
+    top: 10rem;
+    left: 8px;
+}
+/*next button*/
+.carousel-button.next {
+    top: 10rem;
+    right: 8px;
+}
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">   
+    <title>DataCorp Computer System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DataCorp Computer System - Explore our wide range of computer hardware, accessories, 
+        and audio equipment. Find the best deals on RAM, CPUs, motherboards, and more.">
+    <meta name="keywords" content="DataCorp, Computer Systems, Computer Hardware, Computer Accessories, Audio Equipment, 
+        RAM, Chassis, Video Card, CPU Processor, Coolers, Motherboard, Speakers, Microphones, Headphones, Mouses, Keyboards, 
+        computer repair, webdesign, computer repair services, computer repair near me, computer repair shop, computer repair service, 
+        computer repair company, computer repair business, computer repair solutions, computer repair experts, computer repair specialists, 
+        computer repair technicians, computer repair professionals, computer repair support, computer repair assistance, computer repair help, 
+        computer repair guidance">
+    <meta name="author" content="Talisha D. Lopez">
+    <link media="all" rel="stylesheet" type="text/css" href="../datacorpitmanage/ITsolutions.css">
+</head>
+<body>
+    <div class="wrapper"><!-- wrapper start-->
+        <!-- content start-->
+  
+        <header  class="header">
+            <div class="logo">
+                    <a href="../Index.html"><img src="../images/dataCorpFinal.png" alt="DataCorp Logo" class="data-logo">
+                    </a>    
+            </div>
+                <div class="site-title">
+                    <strong>DataCorp</strong>
+                    <span>Computer Systems</span>
+                </div>
+                        <!-- Navigation (Dropdown for mobile) -->
+
+                <div class="nav-container">
+                    <nav class="toggle-nav" aria-label="Main Navigation">
+                        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">&#9776;
+
+                        </button>
+           
+                        <div class="nav-list" id="nav-list">
+                            <div class="nav-list_item">
+                                <a href="../index.html">Home</a>
+                            </div>
+                            <div class="nav-list_item">
+                                <a href="../datacorpservice/services.html">Services</a>
+                            </div>
+                            <div class="nav-list_item">
+                                <a href="../aboutdatacorp/about.html">About</a>
+                            </div>
+                            <div class="nav-list_item">
+                                <a href="https://www.facebook.com/profile.php?id=100068049936393" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+<!-- Desktop Search-->
+            <div class="search-bar">
+                <input name="search" type="search" placeholder="Search for products..." aria-label="Search">
+                    <button type="submit">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <!-- magnifying glass SVG-->
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="16" y1="16" x2="21" y2="21"></line>
+                        </svg>
+                    </button>
+            </div>
+        </header>
+        <main>
+            <section class="it-service">         
+                    <form id="it-service-form" action="https://script.google.com/macros/s/AKfycbwhcAyLdIAKWtX8YTyADHd_zprQxI1D1WslY5QL2BqZQeSha75IuRz7jn-0pbTwuzur/exec" method="post">
+                        <h2>Managed IT Services</h2>
+                <!-- Client Type Section -->
+                        <fieldset class="form-set active" data-step="1">
+                             <legend>Which Are You Interested In?</legend>
+                                <div class="client-options-container">
+                                    <label class = "client-option">
+                                        <input type="radio" name="client-type" value="Home" required>
+                                            Home
+                                    </label>
+                                    <label class = "client-option">
+                                        <input type="radio" name="client-type" value="Business" required>
+                                            Business
+                                    </label>
+                                    
+                                    <div class="button">
+                                        <button type="button" class="back-button" id="previous-page">
+                                        &lt; Back
+                                    </button>
+                                    
+                                        <button type="button" class="continue-button" disabled>
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                        </fieldset>
+                
+                <!--It Service Section-->
+                        <fieldset class="form-set" data-step="2" hidden disabled>  
+                            <legend>What IT Management Help Do You Need?</legend>
+                            <div class="service-options-container">
+                            <label class="service-option">
+                                    <input type ="radio" name ="it-service" value = "Network Setup">
+                                    Network Setup and Configuration
+                                </label>
+                                <label class="service-unavailable">
+                                    <input type ="checkbox" name="it-service" value="New Computer Setup" disabled>
+                                    New Computer or Workstation Setup
+                                    <span>Coming Soon</span>
+                                </label>
+                                
+                                <label class="service-unavailable">
+                                    <input type = "checkbox" name = "it-service" value = "Data Backup" disabled>
+                                    Data Backup and Recovery Solutions
+                                     <span>Coming Soon</span>
+                                </label>
+                               
+                                <label class="service-unavailable">
+                                    <input type = "checkbox" name = "it-service" value = "Website Management" disabled>
+                                    Website Management
+                                    <span>Coming Soon</span>
+                                </label>
+                                
+                                <label class="service-unavailable">
+                                    <input type = "checkbox" name = "it-service" value = "Other" disabled>
+                                    Not sure/ Other
+                                    <span>Coming Soon</span>
+                                </label>
+                                <div class="service-options">
+                                <textarea class="it-service-details" name="it-service-details" placeholder="Please provide details about your IT needs..." rows="5" disabled hidden></textarea>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <div class="button">
+                                    <button type="button" class="back-button">
+                                        &lt; Back
+                                    </button>
+                                    <button type="button" class="continue-button" disabled>
+                                        Continue
+                                    </button>
+                                </div>
+                        </fieldset>
+                
+                <!-- Home Network Setup Step -->
+                <fieldset class="form-set" data-step="3" hidden disabled>
+                    <legend>Home Network Configuration Options</legend>
+                    <div class = "network-service-options-container">
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="New Router / Wi-Fi Configuration">
+                        New Router / Wi-fi Setup and Configuration
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Wi-fi Connection Problems">
+                         Wi-fi Connection Problems
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Weak Wi-fi Signal / Coverage Issues">
+                        Weak Wi-fi Signal / Coverage Issues
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Mesh Wi-fi / Extender Setup">
+                        Mesh Wi-fi / Extender Setup
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value ="Connect Devices to Network">
+                        Connect Devices to Network
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Printers / Peripheral Networking">
+                        Printers / Peripheral Networking
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Guest Network Setup">
+                        Guest Network Setup
+                    </label>
+                   
+                    <label class="network-service-option">
+                        <input type="checkbox" name="home-network-services" value="Other">
+                        Other
+                    </label>
+                    <textarea class="network-service-details" name="home-network-service-details" placeholder="Please provide details about your network setup needs..." rows="5"></textarea>
+                    </div>
+                    <div class="button-group">
+                    <button type="button" class="back-button">
+                    &lt; Back
+                    </button>
+                    <button type="button" class="continue-button" disabled>
+                        Continue
+                    </button>
+                    </div>
+                </fieldset>
+                <!--Business Network Setup Step -->
+                <fieldset class="form-set" data-step="4" hidden disabled>
+                    <legend> Business Network Configuration Options</legend>
+                    <div class = "network-service-options-container">
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="New Business Router / Wi-fi Setup">
+                        New Business Network Setup
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Router / Wi-fi Configuration">
+                        Router / Wi-fi Configuration
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Connect Employee Workstations">
+                        Connect Employee Workstations
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Printers / Peripheral Networking">
+                        Printers / Peripheral Networking
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Wi-fi Coverage / Access Point Setup">
+                        Wi-fi Coverage / Access Point Setup
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Guest Network Setup">
+                        Guest Network Setup
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Network Troubleshooting">
+                        Network Troubleshooting
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Add New Devices to Existing Network">
+                        Add New Devices to Existing Network
+                    </label>
+                    
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Basic Network Security Configuration">
+                        Basic Network Security Configuration
+                    </label>
+                    <label class="network-service-option">
+                        <input type="checkbox" name="business-network-services" value="Other">
+                        Other
+                    </label>
+                    <textarea name="business-network-service-details" placeholder="Please provide details about your network setup needs..." rows="5"></textarea>
+                    </div> 
+                    <div class="button-group">
+                    <button type="button" class="back-button">
+                            &lt; Back
+                    </button>
+                    <button type="button" class="continue-button" disabled>
+                        Continue
+                    </button>
+                    </div>
+                </fieldset>
+                <!-- Appointment Scheduling Step -->
+                <fieldset class="form-set" data-step="5" hidden>
+                    <legend> Schedule an Appointment</legend>
+                                <p class="for-instructions">
+                                        Select a date for your appointment.
+                                    </p>
+                                <!-- Calendar and appointment scheduling form elements -->
+                                    <div class="calendar">
+                                        <!--CALENDAR-->
+                                        <div class ="calendar-header">
+                                            <button type="button" id="previous-month" aria-label="previous-month">
+                                                &larr;
+                                            </button>
+                                            <h2 id="calendar-month"></h2>
+                                            <button type="button" id="next-month" aria-label="next-month">
+                                                &rarr;
+                                            </button>
+                                        </div>
+                                        <div class="calendar-weekdays">
+                                            <span>Sun</span>
+                                            <span>Mon</span>
+                                            <span>Tue</span>
+                                            <span>Wed</span>
+                                            <span>Thu</span>
+                                            <span>Fri</span>
+                                            <span>Sat</span>
+                                        </div>
+                                        <div class="calendar-days" id="calendar-days"></div>
+
+                                        <!--TIME SELECT-->
+                                        <div class="time-selection" id="time-selection">
+                                            <h3>Available Times</h3>
+                                                <p id="selected-date"></p>
+                                                <div class="time-slots">
+                                                    <button type="button" class="time-slot">09:00 AM</button>
+                                                    <button type="button" class="time-slot">09:30 AM</button>
+                                                    <button type="button" class="time-slot">10:00 AM</button>
+                                                    <button type="button" class="time-slot">10:30 AM</button>
+                                                    <button type="button" class="time-slot">11:00 AM</button>
+                                                    <button type="button" class="time-slot">01:00 PM</button>
+                                                    <button type="button" class="time-slot">02:00 PM</button>
+                                                    <button type="button" class="time-slot">03:00 PM</button>
+                                                    
+                                                </div>
+                                        </div>
+                                        <input type="hidden" id="appointment-date" name="appointment-date">
+                                        <input type="hidden" id="appointment-time" name="appointment-time">
+                                        <div class="button-group">
+                                        <button type="button" class="back-button">
+                                            &lt; Back
+                                        </button>
+                                        <button type="button" class="review-button" id="review-button" disabled>
+                                            Review Appointment
+                                        </button>
+                                        </div>
+                            </fieldset>
+                            <!--confirmation step-->
+                            <fieldset class="form-set confirmation-step" data-step="6" hidden disabled>
+                                <legend>Confirmation</legend>
+                                    <div class="confirmation-details">
+                                        <div class="details-title">
+                                            <h4>Confirmation Details</h4>
+                                        </div>
+                                        <div class="details-content">
+                                            <div class="detail-item">
+                                                <h4>Client</h4>
+                                                    <p id="confirmation-client"></p>
+                                            </div>
+                                            <div class="detail-item">
+                                                <h4>Day of Appointment</h4>
+                                                    <p id="confirmation-date"></p>
+                                            </div>
+                                            <div class="detail-item">
+                                                <h4>Time of Appointment</h4>
+                                                    <p id="confirmation-time"></p>
+                                            </div>
+                                            <div class="detail-item">
+                                                <h4>Type of Service</h4>
+                                                    <p id="confirmation-type-of-service"></p>
+                                            </div>
+                                            <div class="detail-item">
+                                                <h4>Customer Notes</h4>
+                                                    <p id="confirmation-detail-notes"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                        <div class="eyebrow"></div>
+                                        <!--Home Contact Information-->
+                                    <fieldset class="home-contact-information" hidden disabled>
+                                         <h4>Contact Information</h4>
+                                         <div class="client-contact-info-container">
+                                    <div class="form-group name" >
+                                        <div class="first-name">
+                                            <label for="home-first-name" class="form-label first">First Name:</label>
+                                            <input type="text" id="home-first-name" name="first-name" class="form-input first" required autocomplete="given-name" required>
+                                        </div>
+                                        <div class="last-name">
+                                            <label for="home-last-name" class="form-label last">Last Name:</label>
+                                            <input type ="text" id="home-last-name" name="last-name" class="form-input last" required autocomplete="family-name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="email">
+                                        <label for="home-email" class="form-label email">Email Address:</label>
+                                        <input type="email" id="home-email" name="email" class="form-input email" required autocomplete="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="phone">
+                                            <label for="home-phone" class="form-label phone">Phone Number:</label>
+                                            <input type="tel" id="home-phone" name="phone" class="form-input phone" required autocomplete="tel" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group contact">
+                                        <div class="home-address">
+                                            <div class="home-form">
+                                            <label for="home-address" class="form-label address">Address:</label>
+                                            <input type="text" id="home-address" name="address" class="form-input address" required autocomplete="street-address" required>
+                                            </div>
+                                            <div class="home-form">
+                                            <label for="home-apartment-number" class="form-label apartment-number">Apt #:</label>
+                                            <input type="text" id="home-apartment-number" name="apartment-number" class="form-input apartment-number" placeholder="Apt, Suite, etc. (optional)" autocomplete="address-line2">
+                                            </div>
+                                            <div class ="home-form">
+                                            <label for="home-city" class="form-label city">City:</label>
+                                            <input type="text" id="home-city" name="city" class="form-input city" required autocomplete="address-level2" required>
+                                            </div>
+                                            <div class="home-form">
+                                            <label for="home-state" class="form-label state">State:</label>
+                                            <input type="text" id="home-state" name="state" class="form-input state" required autocomplete="address-level1" required>
+                                            </div>
+                                            <div class="home-form">
+                                            <label for="home-zip" class="form-label zip">ZIP Code:</label>
+                                            <input type="text" id="home-zip" name="zip" class="form-input zip" required autocomplete="postal-code" required>
+                                            </div>
+                                            <div class="home-form additional-details-field">
+                                            <label for="home-gate-code" class="form-label additional-details">Additional Details:</label>
+                                            <textarea id="home-gate-code" name="additional-details" class="form-input additional-details" placeholder="Additional Details (Gate Code, Special Instructions, etc.)" rows="3"></textarea> 
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="form-group">
+                                        </div>
+                                        <div class="service-payment-notice">
+                                            <h5>Service &amp; Payment Notice</h5>
+                                                <p>Final pricing will be provided after assessment and before repair work is performed. Payment is due after services are completed.</p>
+                                                <p>Scheduling an appointment does not authorize additional repairs or charges without your approval.</p>
+                                        </div>
+                                    </div> 
+                                    <div class="button-group">
+                                            <button type="button" class="back-button">
+                                                &lt; Back
+                                            </button>
+                                            <button type="submit" id="confirm-home-appointment" class="submit-button">
+                                                Confirm Appointment
+                                            </button>
+                                    </div>
+                                </fieldset>
+                                <!-- Business Contact Information -->
+                                <fieldset class="business-contact-information" hidden disabled>
+                                      <h4>Business Contact Information</h4>
+                                      <div class="client-contact-info-container">
+                                    <div class="form-group">
+                                        <div class="business-name">
+                                            <label for="business-name" class="form-label business">Business Name:</label>
+                                            <input type="text" id="business-name" name="business-name" class="form-input business" required autocomplete="organization" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="business-address">
+                                            <div class=" business-form">
+                                            <label for="business-address" class="form-label address">Business Address:</label>
+                                            <input type="text" id="business-address" name="address" class="form-input address" required autocomplete="street-address" required>
+                                            </div>
+                                            <div class="business-form">
+                                            <label for="suite-number" class="form-label suite-number">Suite / Floor:</label>
+                                            <input type="text" id="suite-number" name="suite-number" class="form-input suite-number" placeholder="Apt, Suite, etc. (optional)" autocomplete="address-line2">
+                                            </div>
+                                            <div class="business-form">
+                                            <label for="business-city" class="form-label city">City:</label>
+                                            <input type="text" id="business-city" name="city" class="form-input city" required autocomplete="address-level2" required>
+                                            </div>
+                                            <div class="business-form">
+                                            <label for="business-state" class="form-label state">State:</label>
+                                            <input type="text" id="business-state" name="state" class="form-input state" required autocomplete="address-level1" required>
+                                            </div>
+                                            <div class="business-form">
+                                            <label for="business-zip" class="form-label zip">ZIP Code:</label>
+                                            <input type="text" id="business-zip" name="zip" class="form-input zip" required autocomplete="postal-code" required>
+                                            </div>
+                                            <div class="business-form additional-details-field">
+                                            <label for="business-floor" class="form-label additional-details">Additional Details:</label>
+                                            <textarea id="business-floor" name="additional-details" class="form-input additional-details" placeholder="Additional Details (Gate Code, Special Instructions, etc.)" rows="3"></textarea> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" >
+                                        <div class="first-name">
+                                            <label for="business-first-name" class="form-label first">First Name:</label>
+                                            <input type="text" id="business-first-name" name="first-name" class="form-input first" required autocomplete="given-name" required>
+                                        </div>
+                                        <div class="last-name">
+                                            <label for="business-last-name" class="form-label last">Last Name:</label>
+                                            <input type ="text" id="business-last-name" name="last-name" class="form-input last" required autocomplete="family-name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="email">
+                                        <label for="business-email" class="form-label email">Business Email:</label>
+                                        <input type="email" id="business-email" name="email" class="form-input email" required autocomplete="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="phone">
+                                            <label for="business-phone" class="form-label phone">Business Number:</label>
+                                            <input type="tel" id="business-phone" name="phone" class="form-input phone" required autocomplete="tel" required>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <!-- service & payment notice -->
+                                    <div class="form-group">
+                                        <h5>Service &amp; Payment Notice</h5>
+                                        <div class="service-payment-notice">
+                                            
+                                                <p>Final pricing will be provided after assessment and before repair work is performed. Payment is due after services are completed.</p>
+                                                <p>Scheduling an appointment does not authorize additional repairs or charges without your approval.</p>
+                                        </div>
+                                    </div> 
+                                    <div class="button-group">
+                                            <button type="button" class="back-button">
+                                                &lt; Back
+                                            </button>
+                                            <button type="submit" id="confirm-business-appointment" class="submit-button">
+                                                Confirm Appointment
+                                            </button>
+                                    </div>
+                            </fieldset>
+                        </fieldset>
+                     </form>
+                 </section>   
+        </main>
+    </div>
+    <!-- wrapper end-->
+    <!-- Footer -->
+                 <footer class="footer-container">
+                    <section class="contact-info" aria-labelledby="contact-info-heading">
+                        <h3 class="contact-info-heading" id="contact-info-heading">Contact Information</h3>
+                            <address>
+                                <strong>DataCorp Computer System</strong><br>
+                                        2003 N. Ashley Street<br>
+                                        Valdosta, GA 31602<br>
+                                <strong>Phone:</strong> 
+                                <a href="tel:12292590099">(229) 259-0099</a>
+                            </address>
+                                <div class="business-hours">
+                                    <strong>Business Hours:</strong>
+                                        <div class="business-hours-list">
+                                            <div class="business-time">Monday - Friday: 8:00 AM - 8:00 PM</div>
+                                            <div class="business-time">Saturday: 8:00 AM - 5:00 PM</div>
+                                            <div class="business-time">Sunday: 12:00 PM - 5:00 PM</div>
+                                        </div>
+                                    </div>
+                    </section>
+                     <p>Website designed by [Talisha D. Lopez]</p>
+                </footer>
+                
+                <!--flex container end-->
+        <!-- content end-->
+         <!--scripts-->
+        <script src="../menu.js"></script>
+        <script src="networksetup.js"></script>
+    </body>
+</html>
